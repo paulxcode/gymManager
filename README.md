@@ -65,9 +65,9 @@
 
 ## 📸 Screenshots
 
-| Home Page | Admin Panel | Subscription View |
+| Login Page | Home Page | Admin Panel |
 |-----------|-------------|-------------------|
-| ![Home](screenshots/home.png) | ![Admin](screenshots/admin.png) | ![Subscriptions](screenshots/subscriptions.png) |
+| ![Login](screenshots/login.png) | ![Home](screenshots/home.png) | ![Subscriptions](screenshots/admin.png) |
 
 ---
 
