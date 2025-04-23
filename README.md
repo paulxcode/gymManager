@@ -67,7 +67,7 @@
 
 | Login Page | Home Page | Admin Panel |
 |-----------|-------------|-------------------|
-| ![Login](screenshots/login.jpg) | ![Home](screenshots/home.jpg) | ![Admin](screenshots/admin.jpg) |
+| ![Login](screenshots/login.jpg) | ![Home](screenshots/home.jpg) | ![Admin](screenshots/admin.png) |
 
 ---
 
