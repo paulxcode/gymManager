@@ -1,0 +1,567 @@
+/* Stiluri pentru navbar */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif!important;
+}
+
+body {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Face ca pagina să ocupe întreaga înălțime a ferestrei */
+    background-color: black!important;
+    color: #ffffff!important;
+    margin: 0;
+    padding: 0;
+}
+
+/* navbar */
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+    border-bottom: 1px solid #DC3545;
+
+}
+
+.logo{
+    font-size: 2em;
+    color: #DC3545;
+    user-select: none;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navigation{
+    padding-top: 10px;
+    margin-right: 40px;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #DC3545;
+    font-weight: 500;
+    margin-left: 40px;
+    text-decoration: none;
+
+}
+
+.navigation a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: #DC3545;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform-origin: right;
+    transform: scale(0);
+    transition: transform 0.5s;
+
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+
+}
+/* about us start */
+
+.aboutus{
+    border-top: 1px solid #DC3545;
+}
+/* about us end */
+
+/* carousel start */
+
+
+
+.carousel,
+.carousel-inner,
+.carousel-item,
+.carousel-item img {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: auto;
+    object-fit: cover;
+}
+
+
+
+
+
+
+
+
+.carousel-item img {
+    width: 100vh;
+    object-fit: cover;
+}
+
+/* .carousel {
+    width: 100vh; */
+    /* margin-top: 70px;
+} */
+
+.carousel-caption-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.4);
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.carousel-caption-overlay h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.8);
+}
+
+.carousel-caption-overlay p {
+    font-size: 1.5rem;
+    color: #f8f9fa;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+}
+
+@media (max-width: 768px) {
+    .carousel-caption-overlay h1 {
+        font-size: 2rem;
+    }
+
+    .carousel-caption-overlay p {
+        font-size: 1rem;
+    }
+}
+
+/* end carousel */
+
+/* start locatii */
+
+.card-locatie {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid black ;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    background-color: black;
+}
+.card-locatie:hover {
+    transform: translateY(-10px);
+}
+.card-locatie img {
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* end locatii */
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgb(155, 0, 0);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-container{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-container h2{
+    font-size: 2em;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.432);
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #fff;
+    margin: 30px 0;
+    color: #fff;
+
+}
+
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.3s;
+    text-shadow: 0 0 7px rgba(0, 0, 0, 0.432);
+
+}
+
+.input-box input:focus ~ label,
+.input-box input:valid ~ label{
+    top: -5px;
+
+
+}
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+}
+
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #fff;
+    line-height: 57px;
+}
+
+
+.regloginswitch{
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+
+.regloginswitch a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+
+.regloginswitch a:hover{
+    text-decoration: underline;
+}
+
+.btnn{
+    width: 100%!important;
+    height: 45px;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1em;
+    background-color: darkred;
+    color: #fff;
+}
+
+.btnn:hover{
+    background-color: #ff1a1a;
+    transition: 0.3s;
+
+}
+
+
+.textarea-box {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+    color: #fff;
+}
+
+.textarea-box label {
+    font-size: 1em;
+    font-weight: 500;
+    color: #fff;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.textarea-box textarea {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 8px;
+    outline: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px 5px 10px 5px; /* padding confortabil */
+    resize: none; /* oprește redimensionarea */
+}
+.admin-panel {
+    background-color: black;
+    border: 1px solid #DC3545;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    margin-top: 120px;
+}
+
+.admin-panel h2 {
+    font-size: 2em;
+    margin-top: 15px;
+    color: white;
+    border-bottom: #fff 2px solid;
+}
+
+
+.abonamente-cards {
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.abonament-card {
+    background: darkred;
+    color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.abonament-card:hover {
+    transform: translateY(-10px);
+}
+
+.abonament-card h3 {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.abonament-card p {
+    font-size: 1.1em;
+    margin-bottom: 15px;
+}
+
+.abonament-card button {
+    background-color: rgb(155, 0, 0);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.abonament-card button:disabled {
+    background-color: #aaa;
+    cursor: not-allowed;
+}
+
+/* Linie orizontală de separare */
+hr {
+    border: 1px solid #DC3545;
+    margin: 40px 0;
+    width: 80%;
+}
+
+
+
+
+
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.card h2 {
+    font-size: 24px;
+    color: #333;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.card strong {
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+
+.menu-icon {
+    display: none; /* Ascuns pe desktop */
+    font-size: 30px;
+    cursor: pointer;
+}
+
+
+
+/* FOOTER START */
+
+footer{
+    border-top: 2px solid #DC3545;
+}
+
+.redborder{
+    border: 1px solid #DC3545;
+}
+
+.footer-icon {
+    vertical-align: middle;
+}
+/* FOOTER END */
+
+/* fade in */
+
+.btn-delete:hover {
+    background-color: #ff1a1a;
+    border-color: #ff1a1a;
+}
+
+.fade-in {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* Stil pentru butonul de modificare */
+.btn-submit {
+    background-color: #DC3545; /* Albastru */
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3; /* Albastru mai închis la hover */
+}
+
+.btn-edit, .btn-delete {
+    padding: 5px 10px;
+    margin: 5px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.btn-edit {
+    background-color: blue;
+}
+
+.btn-edit:hover {
+    background-color: darkblue;
+}
+
+.btn-delete {
+    background-color: red;
+}
+
+.btn-delete:hover {
+    background-color: darkred;
+}
+
+/* Stilizare generală pentru tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px;
+}
+
+
+
+/* Stilizare pentru antetul tabelului */
+th {
+    background-color: #272727;
+    color: #fff;
+    padding: 8px;
+    text-align: left;
+    font-weight: bold;
+
+}
+
+/* Stilizare pentru celulele tabelului */
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+/* Alternarea culorilor între rânduri */
+tr:nth-child(even) {
+    background-color: #666666; /* Gri deschis */
+}
+
+tr:nth-child(odd) {
+    background-color: #525252; /* Gri mai închis */
+}
+
+
+/* Stilizare pentru linkuri */
+
+
+.profil-info {
+    background-color: black;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #DC3545;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 100%;
+    max-width: 600px; /* Setează o lățime maximă */
+}
+
+
+
+/* Alte stiluri de hover și focus pentru elementele din meniu */
+
