@@ -19,8 +19,27 @@
 
 ## 📂 Project Structure
 
-├── assets/ # Images and UI assets ├── CSS/ # Stylesheets (style.css) ├── includes/ # Reusable PHP components (db/auth/navbar/footer) ├── templates/ # Main app pages (admin/client views, forms) │ ├── abonamente.php │ ├── adauga_abonament.php │ ├── adauga_curs.php │ ├── rezervari.php │ └── ... ├── index.php # Landing page ├── login.php # User login ├── register.php # User registration ├── profil.php # User profile ├── raport_abonamente.php # Admin reports
+- **`assets/`** – Images and UI assets  
+- **`CSS/`** – Custom stylesheets (e.g. `style.css`)  
+- **`includes/`** – Reusable PHP components:
+  - `auth.php` – Authentication logic  
+  - `db.php` – Database connection  
+  - `navbar.php` – Navigation bar  
+  - `footer.php` – Footer content  
 
+- **`templates/`** – Main app pages:
+  - `abonamente.php` – Subscription list  
+  - `adauga_abonament.php` – Add new subscription  
+  - `adauga_curs.php` – Add new course  
+  - `rezervari.php` – View and make reservations  
+  - `toti_utilizatori.php` – Admin view of all users  
+  - `raport_abonamente.php` – Subscription report for admins  
+
+- **Root files:**
+  - `index.php` – Landing page  
+  - `login.php` – User login page  
+  - `register.php` – User registration  
+  - `profil.php` – User profile management  
 
 ---
 
