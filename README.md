@@ -70,9 +70,4 @@
 - ⭐ User feedback & course rating
 - 📅 Calendar view for courses
 
----
-
-## 🧑‍💻 Author
-
-Developed with passion by [Your Name].
 
