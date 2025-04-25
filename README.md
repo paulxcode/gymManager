@@ -1,10 +1,10 @@
-# 🏋️ GymManager – Web App for Gym Management
+# GymManager – Web App for Gym Management
 
 **GymManager** is a PHP & MySQL-based web application for managing a fitness center. It offers full CRUD functionalities for subscriptions, users, courses, and reservations. The platform includes both client-facing and admin interfaces, with responsive design and smooth user experience enhancements using **Bootstrap** and **fade-in animations**.
 
 ---
 
-## ✨ Features
+## Features
 
 - 🔐 **Authentication system** (login, registration, session handling)
 - 👤 **User management** (admin can view/edit/delete users)
@@ -17,7 +17,7 @@
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 - **`assets/`** – Images and UI assets  
 - **`CSS/`** – Custom stylesheets (e.g. `style.css`)  
@@ -43,7 +43,7 @@
 
 ---
 
-## 🧪 What Was Tested
+## What Was Tested
 
 - ✅ Authentication & session protection
 - ✅ CRUD operations for users, courses, subscriptions
@@ -54,7 +54,7 @@
 
 ---
 
-## ⚠️ Challenges Faced
+## Challenges Faced
 
 - Mapping many-to-many relationships (users ↔ subscriptions)
 - Validating course capacity in real-time during reservation
@@ -63,7 +63,7 @@
 
 ---
 
-## 📸 Screenshots
+## Screenshots
 
 | Login Page | Home Page | Admin Panel |
 |-----------|-------------|-------------------|
@@ -71,7 +71,7 @@
 
 ---
 
-## 🚀 Technologies Used
+## Technologies Used
 
 - `PHP 8+`
 - `MySQL`
@@ -82,7 +82,7 @@
 
 ---
 
-## 📌 Future Improvements
+## Future Improvements
 
 - 🔔 Notification system for bookings
 - 💳 Online payments integration
