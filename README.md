@@ -23,7 +23,7 @@
 - **`CSS/`** – Custom stylesheets (e.g. `style.css`)  
 - **`includes/`** – Reusable PHP components:
   - `auth.php` – Authentication logic  
-  - `db.php` – Database connection  
+  - `database.php` – Database connection  
   - `navbar.php` – Navigation bar  
   - `footer.php` – Footer content  
 
